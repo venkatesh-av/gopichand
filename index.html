@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="sectionHomes">
+        <div class="bg-container d-flex flex-column justify-content-end">
+            <div class="tourism-card">
+                <h1 class="main-heading">Welcome to Goa</h1>
+                <p class="paragraph">Plan your trip.</p>
+                <button class="button" onclick="display('sectionFavourites')">Get Started</button>
+                <p>@gopichand</p>
+            </div>
+        </div>
+    </div>
+    <div id="sectionFavourites">
+        <div class="favourite-places-bg-container">
+            <h1 class="favourite-places-heading">Favourite Beaches in Goa</h1>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionTajmahal')">
+                <div>
+                    <h1 class="favourite-place-card-heading">Cola Beach</h1>
+                    <p class="favourite-place-card-description"> Cola Beach is located in Canacona town of South Goa, and is situated close to the Agonda (10 km).</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fGNvbGElMjBiZWFjaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" class="favourite-place-card-image" />
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectiongolden')">
+                <div>
+                    <h1 class="favourite-place-card-heading">Palolem Beach</h1>
+                    <p class="favourite-place-card-description">iIt's known for its beautiful crescent – shape which makes it possible to see both the ends from the centre of the beach.</p>
+                </div>
+                <img src="https://www.ourtasteforlife.com/wp-content/uploads/2019/01/TOP-BEACHES-SOUTH-GOA-PALOLEM-BEACH-1.jpg" class="favourite-place-card-image" />
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionmisure')">
+                <div>
+                    <h1 class="favourite-place-card-heading">Bega Beach</h1>
+                    <p class="favourite-place-card-description"> Baga Beach is quite famous for its commercial nightlife. The famous Tito's Lane has many bars, lounges, and clubs.</p>
+                </div>
+                <img src="https://imgmedia.lbb.in/media/2018/12/5c2a00fbf6013242160a576d_1546256635955.jpg" class="favourite-place-card-image" />
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionvaranasi')">
+                <div>
+                    <h1 class="favourite-place-card-heading">Agonda Beach</h1>
+                    <p class="favourite-place-card-description">Ggonda beach is also known as the Silent Beach of Goa.it is 3km long and is full of white sands lined with palm.</p>
+                </div>
+                <img src="https://www.flattickets.com/blog/wp-content/uploads/2018/07/goa-5910773_640-640x350.jpg" class="favourite-place-card-image" />
+            </div>
+            <button class="button2" onclick="display('sectionHomes')"> Back</button>
+        </div>
+    </div>
+    <div id="sectionTajmahal">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://images.unsplash.com/photo-1495822892661-2ead864e1c7b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTI5fHxjb2xhJTIwYmVhY2h8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://thumbs.dreamstime.com/b/cola-beach-south-goa-india-38861455.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://assets.serenity.co.uk/47000-47999/47618/1296x864.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.squarespace-cdn.com/content/v1/53172b1be4b0cc8a5401db4a/1592765221732-5GFBXBEPQASAJDHTB7L0/2L1A2812.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://st.depositphotos.com/2501819/3084/i/600/depositphotos_30840649-stock-photo-cola-beach-sunset.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Cola Beach</h1>
+                    <p class="detailed-view-card-description">
+                        Cola as one of the most beautiful beaches of Goa,Cola beach is also known as 'Khola' beach, Cola Beach is a tranquil paradise hidden from the prying eyes of tourists. Surrounded by the ocean, coconut palms and forested cliffs, Cola Beach is also home to an emerald green lagoon.The Cola beach is 9.8 kilometers south of the Cabo de Rama fort. Cola is one of the hidden beaches in Goa, a marvel of nature that is still undiscovered by most tourists. It remains secluded throughout the year. This is a perfect place for a nice, relaxing holiday in Goa. Cola is a perfect choice to escape from the crowded beaches and the hustle and bustle of city life.
+                    </p>
+                </div>
+            </div>
+            <button class="button3" onclick="display('sectionFavourites')"> Back</button>
+        </div>
+    </div>
+    <div id="sectiongolden">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="goldenTempleCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#goldenTempleCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#goldenTempleCarousel" data-slide-to="1"></li>
+                        <li data-target="#goldenTempleCarousel" data-slide-to="2"></li>
+                        <li data-target="#goldenTempleCarousel" data-slide-to="3"></li>
+                        <li data-target="#goldenTempleCarousel" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://images.squarespace-cdn.com/content/v1/53172b1be4b0cc8a5401db4a/1592765221732-5GFBXBEPQASAJDHTB7L0/2L1A2812.jpg?format=2500w" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://d3gw4aml0lneeh.cloudfront.net/assets/locations/LmjSyMtkoNJE.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.tripsavvy.com/thmb/JITnd3DNcPUEvUcZ3ZE8VmcY4yI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-606353257-5be1ac59c9e77c00519e8ae0.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://togethertounknown.com/wp-content/uploads/2023/01/DJI_0207-min.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://assets.serenity.co.uk/47000-47999/47940/1296x864.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#goldenTempleCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#goldenTempleCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Palolem Beach</h1>
+                    <p class="detailed-view-card-description">
+                        Palolem Beach is situated in Canacona in southern Goa, India. The beach attracts many international tourists, mainly during the winter season between November and March. It is considered to be one of the region's most beautiful beaches.Palolem Beach is largely unspoiled and is inhabited by both local fishermen and by foreign tourists who live in shacks along the shore or in the main village itself.it attracts a large number of tourists from all over the world. The beach offers the perfect balance of privacy, peace of mind, and nightlife with lots of rejuvenation.
+                    </p>
+                </div>
+            </div>
+            <button class="button3" onclick="display('sectionFavourites')"> Back</button>
+        </div>
+    </div>
+    <div id="sectionmisure">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="mysorePalaceCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#mysorePalaceCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#mysorePalaceCarousel" data-slide-to="1"></li>
+                        <li data-target="#mysorePalaceCarousel" data-slide-to="2"></li>
+                        <li data-target="#mysorePalaceCarousel" data-slide-to="3"></li>
+                        <li data-target="#mysorePalaceCarousel" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://www.adotrip.com/public/images/areas/master_images/60d0813807aff-Baga_Beach_In_Goa.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://resources.thomascook.in/images/holidays/sightSeeing/49245_Baga_Beach_Goa_India_960.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://guidetour.in/wp-content/uploads/2018/10/Goa-Baga-Beach.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.adotrip.com/public/images/areas/60d0813555b91-Baga%20Package%20Tour.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.flattickets.com/blog/wp-content/uploads/2018/07/goa-5910773_640-640x350.jpg" class="d-block w-100" alt="..." />
+                        </div>
+
+
+                    </div>
+                    <a class="carousel-control-prev" href="#mysorePalaceCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#mysorePalaceCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Begaa Beach</h1>
+                    <p class="detailed-view-card-description">
+                        Baga Beach has rows of shacks and fishing boats, and during high tide the beach is narrow. It derived its name from Baga Creek, which empties into the Arabian Sea.Some popular tourist activities at Baga Beach include swimming, sunbathing, and water sports such as parasailing, jet skiing, and banana boat rides.Baga derived its name from the ‘Baga Creek’ which flows into the Arabian Sea. Baga is also popular for its street-side markets and designer stores.
+                    </p>
+                </div>
+            </div>
+            <button class="button3" onclick="display('sectionFavourites')"> Back</button>
+        </div>
+    </div>
+    <div id="sectionvaranasi">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Detailed View</h1>
+            <div class="detailed-view-card-container">
+                <div id="varanasiTempleCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#varanasiTempleCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#varanasiTempleCarousel" data-slide-to="1"></li>
+                        <li data-target="#varanasiTempleCarousel" data-slide-to="2"></li>
+                        <li data-target="#varanasiTempleCarousel" data-slide-to="3"></li>
+                        <li data-target="#varanasiTempleCarousel" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh54uRP53hG1WMbAxgi2EHL2q8k9dNdjVblQ&usqp=CAU" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Sunset_at_Agonda_Beach.jpg/330px-Sunset_at_Agonda_Beach.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Cola_Beach_Bay_South_Goa_Jan19_DSC06186.jpg/330px-Cola_Beach_Bay_South_Goa_Jan19_DSC06186.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Sunset_at_Agonda_Beach.jpg/330px-Sunset_at_Agonda_Beach.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmRwI85YJQGQIIt9_R6eB7okpIaI20iKv1uQ&usqp=CAU" class="d-block w-100" alt="..." />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#varanasiTempleCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#varanasiTempleCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading">Varanasi Temple</h1>
+                    <p class="detailed-view-card-description">
+                        Agonda is a large village located in Canacona in South Goa district, India. Agonda is famous for its beach. Agonda Beach is a 3 km long public beach located in Agonda village in Goa, India, about 9.2 kilometres (5.7 mi) north of Palolem Beach in South Goa district, and about an hour from Margao.[4] There is one more beach on the north side of Agonda cliff called Cola beach which has an adjoining lagoon.During the month of September, the beach serves as a nesting ground for olive ridley sea turtles.
+                    </p>
+                </div>
+            </div>
+            <button class="button3" onclick="display('sectionFavourites')"> Back</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
